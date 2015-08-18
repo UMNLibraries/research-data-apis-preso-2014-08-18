@@ -97,6 +97,24 @@
           <h2>An API is an interface for connecting bits of software to each other, to create custom applications.</h2>
 				</section>
 
+        <section>
+          <h2>API Example - <a href="https://nodejs.org">Node.js</a></h2>
+          <p><code>hello.js</code></p>
+          <pre><code class="javascript" data-trim contenteditable>
+var http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');
+}).listen(1337, '127.0.0.1');
+console.log('Server running at http://127.0.0.1:1337/');
+          </code></pre>
+          <p>Command line:</p>
+          <pre><code class="bash" data-trim contenteditable>
+$ node hello.js
+Server running at http://127.0.0.1:1337/
+          </code></pre>
+        </section>
+
 				<section>
 					<h2>Hello There</h2>
 					<p>
